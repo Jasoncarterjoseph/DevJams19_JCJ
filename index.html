@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dark</title>
+    <!-- For-Mobile-Apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Dark Login Form Widget Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, SonyErricsson, Motorola Web Design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link rel="stylesheet" href="css/style2.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        function changeHeadingBg(color,color2){
+        document.getElementById("editor").style.background = color;
+        document.getElementById("change2").style.background = color;
+        
+        document.getElementById('editor').style.color = color2;
+    }
+    function showDiv() {
+   document.getElementById('change2').style.display = "block";
+    }
+    
+    </script>
+    <script  src=".\js\theme.js"></script>
+    
+</head>
+<body>
+    
+    <div class="fullscreen-bg">
+        <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+            <source src="images/y2mate.com - technology_background_5-LyRjHlRgQ_1080p.mp4" type="video/webm">
+            
+        </video>
+    </div>
+    <div class="container">
+        <h1>Dev JAM'S 19</h1>
+        <div class="contact-form">
+            <div class="signin">
+                <h2>Enter Algorithm</h2>
+                <form>
+                        <div id="editor" contenteditable="true"></div>
+                    <!--<textarea id='change' rows="29" cols="80" class="textarea" placeholder="Please Enter Your Code Here"></textarea>-->
+                </form>
+            </div>
+        </div>
+        <div class="contact-form2">
+            <div class="signin">
+                    <h2>Pseudocode</h2>
+                <form>
+                    <pre id="change2" class="rectangle" style="display: none;">
+factorial = 1
+if num < 0:
+   print("Sorry, factorial does not exist for negative numbers")
+elif num == 0:
+   print("The factorial of 0 is 1")
+else:
+   for i in range(1,num + 1):
+       factorial = factorial*i
+   print("The factorial of",num,"is",factorial)
+
+                    </pre>
+
+                </form>
+            </div>
+        </div>
+        <div>
+        <button id="changetext" type="button" class="themeButton"  onclick="changeHeadingBg('white','black');">Light Theme</button>
+        <button id="changetext" type="button" class="themeButton2"  onclick="changeHeadingBg('#444','white');" style="margin-top: 20px;">Dark Theme</button>
+        <button id="button" class="placement" onclick="showDiv()">Genarate</button>
+        <button id="button" class="placement2" >Fetch</button>
+        <canvas id="myCanvas" width="500" height="500"></canvas>
+        
+    </div>
+        
+        
+    </div>
+    
+</body>
+</html>
